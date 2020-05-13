@@ -2,8 +2,9 @@
 #include <LiquidCrystal.h>
 
 LiquidCrystal lcd(22,24,26,28,30,32);
-const int stepsPerRevolution = 100; 
+const int stepsPerRevolution = 32; 
 Stepper myStepper(stepsPerRevolution, 4, 5,6, 7);
+Stepper myStepper2(stepsPerRevolution, 8, 9,10, 11);
 int counter=0;
 const char *direction[4] = { "North", "East", "South", "West" }; 
 int potentiometer = A0;
