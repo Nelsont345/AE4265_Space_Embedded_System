@@ -9,12 +9,23 @@ const char *wire_color[4] = { "Blue", "Yellow", "Green", "Red" };
 Stepper myStepper(stepsPerRevolution, 4, 5,6, 7);
 Stepper myStepper2(stepsPerRevolution, 8, 9,10, 11);
 
+
+//measuring desired change in angle
 unsigned long t = 0;
 int potentiometer = A0;
 float val = 0;  
 int previous = 0;
 int change = 0;
 int counter = 0;
+
+//test variables
+int val1 = A1;
+int val2 = A2;
+int val3 = A3;
+int val4 = A4;
+float pin1= 0;
+float pin2= 0;
+
 
 void setup() {
   lcd.begin(16, 2);
