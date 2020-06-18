@@ -23,6 +23,21 @@ int val1 = A1;
 int val2 = A2;
 int val3 = A3;
 int val4 = A4;
+
+struct analog_output{
+  byte digital_pin;
+  byte analog_pin;
+  char color;
+};
+
+wires2 analog_output{
+  {A1, 10, "green"},
+  {A2, 11, "red"},
+  {A3, 8, "blue"},
+  {A4, 9, "yellow"}  
+};
+
+
 float pin1= 0;
 float pin2= 0;
 
